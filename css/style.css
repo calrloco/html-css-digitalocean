@@ -1,0 +1,184 @@
+/* base */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   font-size: 62.5%;
+}
+body{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+/* var */
+:root{
+    /* colori */
+
+    --blue-buttons:#0069FF;
+    --font-gray:#C9CDD7;
+    --heading-blu:#041C4F;
+    --footer-blu:#010E28;
+    --footer-btn-hover:#CBD4E4;
+    --footer-gray:#9399A4;
+    --white:#fff;
+}
+/* common */
+a{
+    text-decoration: none;
+}
+/* nav */
+.navbar{
+    height: 6.5rem;
+    background-color: var(--white);
+    margin-bottom: 0;
+   line-height: 6.5rem;
+}
+.logo-top{
+    max-height: 2.9rem;
+    height: 2.9rem;
+    
+}
+.navbar__list{
+    padding-left: 5rem;
+}
+.navbar__list-items{
+    display: inline-block;
+    text-transform: capitalize;
+    padding-right: 2rem;
+}
+.navbar a{
+    text-decoration: none;
+}
+.btn-nav{
+    border: 1px solid var(--blue-buttons);
+    border-radius: .2rem;
+    padding: 1rem;
+}
+/* nav fine */
+/* header */
+.header{
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+    height: 80rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top:6.5rem;
+}
+.header__heading{
+    margin-top: 27rem;
+}
+.header__heading-title{
+    font-size: 5.8rem;
+    font-weight: 700;
+    color: var(--white);
+}
+.header__heading-content{
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: 200;
+}
+.no-padding{
+    padding: 0;
+}
+.header__form{
+    background-color: var(--white);
+    border-radius: .4rem;
+    margin-top: 13rem;
+}
+.header__form-input{
+    padding: 3.2rem;
+}
+.header__form-title{
+    width: 100%;
+    height: 100%;
+    background-color: #F3F5F9;
+    padding: 1.6rem 0 1.2rem;
+    font-size: 1.8rem;
+    color: var(--heading-blu);
+    font-weight: 700;
+    border-radius: .4rem;
+
+}
+.header__form-bottom{
+    padding: 3.2rem;
+    width: 100%;
+}
+.btn-form__bottom-right{
+    width: 28%;
+    height: auto;
+}
+.btn-form__bottom-left{
+    width: 70%;
+}
+.agreement{
+    color: var(--white);
+    margin:1.2rem 0;
+}
+/* header fine */
+/* logo grid */
+.logo-grid{
+    padding: 6.4rem 2.4rem;
+    background-color:#F3F5F9 ;
+}
+.logo-grid__anchor{
+    margin: 20px 0 10px;
+    font-size: 1.6rem;
+}
+.logo-grid__anchor a{
+    text-decoration: none;
+}
+.logo-grid__title{
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    color: #5b6987;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* logo grid fine */
+/* porducts */
+.products{
+    padding: 12rem 2.4rem;
+}
+.products__description-text{
+  margin: 2rem 1rem 0;
+  font-size: 2rem;
+  color: var(--font-gray);
+}
+.products__title h2{
+    font-size: 3.6rem;
+    color: var(--heading-blu);
+}
+.products__menu-item{
+    padding:  1.5rem 2rem;
+    border-left: 2px solid gray;
+    margin: 0;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: var(--font-gray);
+    cursor: pointer;
+}
+.products__menu-item:hover{
+    padding:  1.5rem 2rem;
+    border-left: 2px solid var(--blue-buttons);
+    color: var(--heading-blu);
+    cursor: pointer;
+}
+.row-products{
+    margin-top: 7.2rem;
+}
+.products__cards-heading{
+    margin: 2.5rem 0 1rem;
+    color: var(--heading-blu);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.products__cards-text{
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+}
+/* products fine */
