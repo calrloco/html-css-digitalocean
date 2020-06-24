@@ -32,7 +32,7 @@ a{
     text-decoration: none;
 }
 section{
-    
+  
     padding: 12rem 2.4rem;
 }
 
@@ -107,8 +107,9 @@ section{
     background-color: var(--white);
     border-radius: .4rem;
     margin-top: 13rem;
-    
+    min-width: 39rem;
 }
+
 .header__form-input{
     padding: 3.2rem;
 }
@@ -166,6 +167,8 @@ section{
 .agreement{
     color: var(--white);
     margin:1.2rem 0 20rem;
+    
+    
 }
 /* header fine */
 /* logo grid */
@@ -425,7 +428,7 @@ section{
       display: none;
     }
     .btn-nav{
-        display: none;
+        opacity: 0;
     }
    
   }
@@ -446,9 +449,6 @@ section{
     .get__started{
         text-align: center;
     }
-    .header__heading{
-        text-align: center;
-    }
     .products__cards{
         text-align: center;
     }
@@ -462,5 +462,32 @@ section{
     }
    
   }
-
+  @media screen and (max-width:1117px) and (min-width:992px) {
+    div #form-id{
+        margin-left: 4rem;
+    }
+  }
+  @media screen and (max-width:480px){
+    div #form-id{
+        margin-left: 5.2rem;
+        
+    }
+  }
   
+  @media screen and (max-width:520px){
+    div #form-id{
+        margin-left:7rem;
+        
+    }
+  }
+  @media screen and (max-width:460px){
+    div #form-id{
+        margin-left:.6rem;
+        
+    }
+  }
+  @media screen and (max-width:991px){
+    .header__heading{
+        text-align: center;
+    }
+}
