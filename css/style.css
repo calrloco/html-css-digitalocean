@@ -8,11 +8,12 @@
 }
 html{
    font-size: 62.5%;
+   
 }
 body{
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
-    
+   
 }
 /* var */
 :root{
@@ -34,6 +35,7 @@ section{
     
     padding: 12rem 2.4rem;
 }
+
 .btn-blu{
     background-color: var(--blue-buttons);
     color: var(--white);
@@ -45,6 +47,7 @@ section{
     background-color: var(--white);
     margin-bottom: 0;
    line-height: 6.5rem;
+   overflow: hidden;
 }
 .logo-top{
     
@@ -77,11 +80,11 @@ section{
 /* header */
 .header{
     background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
-    
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-top:6.5rem;
+    
 }
 .header__heading{
     margin-top: 27rem;
@@ -452,5 +455,12 @@ section{
     .business__card{
         text-align: center;
     }
+    .header__heading-title{
+        font-size: 3.1rem;
+        font-weight: 700;
+        color: var(--white);
+    }
+   
   }
+
   
