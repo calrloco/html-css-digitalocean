@@ -31,6 +31,7 @@ a{
     text-decoration: none;
 }
 section{
+    
     padding: 12rem 2.4rem;
 }
 .btn-blu{
@@ -67,6 +68,10 @@ section{
     border: 1px solid var(--blue-buttons);
     border-radius: .2rem;
     padding: 1rem;
+}
+.fa-bars{
+    font-size: 2.5rem;
+    display: block;
 }
 /* nav fine */
 /* header */
@@ -234,6 +239,7 @@ section{
 }
 .row__design-gallery{
     margin-top: 7.5rem;
+    
 }
 .arrow-design-gallery{
     padding-top: 26.5rem;
@@ -382,5 +388,69 @@ section{
     border-top: 1px solid  hsla(0,0%,100%,0.5);
     padding-top: 3.2rem;
 }
+
 /* footer fine */
 /* query */
+@media screen and (max-width: 992px){
+  .arrow{
+      display: none;
+  }
+}
+@media  screen and (max-width:767px){
+   .products__menu{
+        text-align: center;
+    }
+    .products__menu-item{
+        display: inline-block;
+        padding:  1.5rem 2rem;
+        border-bottom: 2px solid gray;
+        border-left: none;
+      
+    }
+    .products__menu-item:hover{
+      padding:  1.5rem 2rem;
+      border-left: none;
+      border-bottom: 2px solid var(--blue-buttons);
+      color: var(--heading-blu);
+      cursor: pointer;
+  }
+ 
+ 
+  }
+  @media  screen and (max-width:1199px){
+    .navbar__list{
+      display: none;
+    }
+    .btn-nav{
+        display: none;
+    }
+   
+  }
+  @media  screen and (min-width:1199px){
+       
+   .fa-bars{
+       display: none;
+   }
+  }
+  @media screen and (max-width:767px){
+    .bottom-footer-margin{
+        text-align: center;
+    }
+    .social-icons{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .get__started{
+        text-align: center;
+    }
+    .header__heading{
+        text-align: center;
+    }
+    .products__cards{
+        text-align: center;
+    }
+    .business__card{
+        text-align: center;
+    }
+  }
+  
