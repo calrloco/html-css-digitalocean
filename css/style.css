@@ -21,11 +21,14 @@ body{
 
     --blue-buttons:#0069FF;
     --font-gray:#C9CDD7;
-    --heading-blu:#041C4F;
+    --heading-blu:#031b4e;
     --footer-blu:#010E28;
     --footer-btn-hover:#CBD4E4;
     --footer-gray:#9399A4;
     --white:#fff;
+}
+p{
+    color: var(--font-gray);
 }
 /* common */
 a{
@@ -50,9 +53,9 @@ section{
    overflow: hidden;
 }
 .logo-top{
-    
     max-height: auto;
     height: 2.9rem;
+    transform: translateY(-12%);
     
 }
 .navbar__list{
@@ -70,8 +73,23 @@ section{
 .btn-nav{
     border: 1.5px solid var(--blue-buttons);
     border-radius: .5rem;
-    padding: 1rem 3rem;
+    padding: .6rem 2rem;
     letter-spacing: .1rem;
+   
+}
+.btn-nav-left{
+    margin-left: 1.5rem;
+    background-color: var(--blue-buttons);
+    color: #fff;
+}
+.btn-nav-left:hover{
+    margin-left: 1.5rem;
+    background-color: var(--blue-buttons);
+    color: #fff;
+}
+.btn-nav-right:hover{
+    background-color: var(--blue-buttons);
+    color: #fff;
 }
 .fa-bars{
     font-size: 2.5rem;
@@ -229,6 +247,7 @@ section{
     color: var(--heading-blu);
     font-size: 1.8rem;
     font-weight: 700;
+    color: #031b4e;
 }
 .products__cards-text{
     margin: 0 0 1rem;
@@ -252,8 +271,32 @@ section{
     padding-top: 26.5rem;
     font-size: 2.5rem;
 }
+.gallery-description{
+    margin-top: 3.7rem;
+    font-size: 1.6rem;
+    color: var(--font-gray);
+}
 /* design gallery fine */
 /* business cards */
+.business__card-link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--blue-buttons);
+  
+}
+.business__card-link:hover{
+    text-decoration: none;
+    color: var(--blue-buttons);
+}
+.fa-chevron-right{
+    padding-left: .6rem;
+}
+.business-heading{
+    margin-bottom: 7rem;
+    font-size: 3.6rem;
+    color: var(--heading-blu);
+    font-weight: 500;
+}
 .business{
     padding: 12rem 2.4rem;
 }
@@ -261,6 +304,7 @@ section{
     font-size:1.8rem;
     margin-top: 2.5rem;
     font-weight: 700;
+    color: #031b4e;
 }
 .business__card-text{
   margin-top: 2rem;
@@ -350,10 +394,6 @@ section{
 .get__started-heading{
     color: #fff;
 }
-.get__started-btn a{
-   
-
-}
 .get__started-btn{
     padding: 3rem 3rem 2.8rem;
     background: var(--white);
@@ -425,8 +465,8 @@ section{
     opacity: 0;
     width: 0;
     position: fixed;
-    left: 2rem;
-    top: 10rem;
+    left: 0;
+    top: 8rem;
     text-align: left;
     padding: 1rem;
     border-radius: .5rem;
@@ -448,7 +488,7 @@ section{
     display: none;
 }
 .navigation__mobile-checkbox:checked ~ .navigation__mobile-box {
-    width: 97%;
+    width: 100%;
     opacity: 1;
 }
 .navigation__mobile-checkbox:checked + .navigation-button .popup-icon{
@@ -472,7 +512,7 @@ section{
 .popup-icon,.popup-icon::after,.popup-icon::before{
   width: 3rem;
   height: 2px;
-  background-color: black;
+  background-color: var(--footer-gray);
   display: inline-block;
   transition: all .2s;
 }
@@ -522,15 +562,18 @@ section{
     margin-top: 1rem;
     margin-bottom: 0;
 }
-.popup_products-right-heading{
+.popup_products-right-heading a{
     margin-top: 1rem;
+    
 }
 .popopup_products-right-heading-link-items{
     display: block;
     margin-top: 3rem;
 }
 .popup_products-right{
-    line-height: 2rem;
+    line-height: 1rem;
+    margin-top: 1.5rem;
+    color: var(--blue-buttons);
 }
 .popup-menu-account{
     border: 1px solid var(--blue-buttons);
@@ -557,6 +600,7 @@ section{
 @media  screen and (max-width:767px){
    .products__menu{
         text-align: center;
+        margin-bottom: 8rem;
     }
     .products__menu-item{
         display: inline-block;
