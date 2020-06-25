@@ -577,12 +577,32 @@ section{
 }
 .popup-menu-account{
     border: 1px solid var(--blue-buttons);
-    width: 90%;
+    width: 100%;
     font-size: 1.4rem;
     font-weight: 500;
     background-color: var(--white);
     margin-top: 2rem;
+    border-radius: .5rem;
+    letter-spacing: .1rem;
+
+    
 }
+.popup-menu-account-right{
+    background-color: var(--blue-buttons);
+    color: #fff;
+}
+.popup-menu-account-left{
+  color: var(--blue-buttons)
+}
+.popup-menu-account-left:hover{
+    background-color: var(--blue-buttons);
+    color: #fff;
+}
+.popup-bottom{
+  display: flex;
+  
+}
+
 #popup-btn:focus{
     border: 1px solid var(--blue-buttons);
     box-shadow: none;
