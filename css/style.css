@@ -71,10 +71,11 @@ section{
 .navbar__list-items a:hover{
     color: #337ab7;
     margin-bottom: var(--blue-buttons);
+    padding-bottom: 2rem;
 }
 .navbar__list-items a:hover{
     color: #337ab7;
-    border-bottom:2px solid var(--blue-buttons);
+    border-bottom:8px solid var(--blue-buttons);
 }
 .navbar a{
     text-decoration: none;
