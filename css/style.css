@@ -428,6 +428,11 @@ section{
     left: 2rem;
     top: 10rem;
     text-align: left;
+    padding: 1rem;
+    border-radius: .5rem;
+    overflow-x: hidden;
+   
+    
 }
 .navigation-button{
     background-color: #fff;
@@ -443,7 +448,7 @@ section{
     display: none;
 }
 .navigation__mobile-checkbox:checked ~ .navigation__mobile-box {
-    width: 95%;
+    width: 97%;
     opacity: 1;
 }
 .navigation__mobile-checkbox:checked + .navigation-button .popup-icon{
@@ -496,7 +501,51 @@ section{
     font-size: 1.8rem;
     border-bottom: 1px solid black;
     text-transform: capitalize;
+    
 }
+.popup_products-left img{
+    display: inline-block;
+     height: 4.5rem;
+     transform: translateY(-40%);
+}
+.popup_products-link{
+   
+    display: inline-block;
+}
+.popup_products-link a p{
+    display: inline-block;
+}
+.popup_products-left{
+    line-height: 2rem;
+}
+.popup_products-link-description{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.popup_products-right-heading{
+    margin-top: 1rem;
+}
+.popopup_products-right-heading-link-items{
+    display: block;
+    margin-top: 3rem;
+}
+.popup_products-right{
+    line-height: 2rem;
+}
+.popup-menu-account{
+    border: 1px solid var(--blue-buttons);
+    width: 90%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: var(--white);
+    margin-top: 2rem;
+}
+#popup-btn:focus{
+    border: 1px solid var(--blue-buttons);
+    box-shadow: none;
+    outline: none;
+}
+
 /* menu popup fine */
 /* footer fine */
 /* query */
@@ -636,6 +685,20 @@ section{
 @media screen and (max-width:767px){
     .test-speed{
         padding-left: 3rem;
+    }
+    .popup_products-right,.popup_products-left {
+         display: none;
+    }
+    .popup-heading::after{
+        content: 'Login or sing up to your account';
+        position: relative;
+        left: 15%;
+    }
+    .popup-heading p{
+        display: none;
+    }
+    .products-popup-head{
+        display: none;
     }
 }
 @media screen and (max-width:747px){
