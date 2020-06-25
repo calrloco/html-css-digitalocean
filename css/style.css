@@ -33,6 +33,11 @@ p{
 /* common */
 a{
     text-decoration: none;
+    color:var(--blue-buttons);
+}
+a:hover{
+    text-decoration: none;
+    color:var(--blue-buttons);
 }
 section{
   
@@ -209,8 +214,9 @@ section{
     margin: 20px 0 10px;
     font-size: 1.6rem;
 }
-.logo-grid__anchor a{
+.logo-grid__anchor-link{
     text-decoration: none;
+    color:var(--blue-buttons);
 }
 .logo-grid__title{
     font-size: 1.4rem;
@@ -242,6 +248,7 @@ section{
     text-transform: capitalize;
     color: var(--font-gray);
     cursor: pointer;
+    display: block;
 }
 .products__menu-item:hover{
     padding:  1.5rem 2rem;
@@ -627,7 +634,7 @@ section{
       display: none;
   }
 }
-
+@media screen and (max-width: 767px){
     .products__menu-item{
         display: inline-block;
         padding:  1.5rem 2rem;
@@ -642,9 +649,12 @@ section{
       color: var(--heading-blu);
       cursor: pointer;
   }
- 
- 
+   
   }
+   
+
+ 
+  
   @media  screen and (max-width:1199px){
     .navbar__list{
       display: none;
