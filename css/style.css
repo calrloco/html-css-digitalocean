@@ -612,22 +612,12 @@ section{
 /* menu popup fine */
 /* footer fine */
 /* query */
-@media screen and (max-width: 767px){
-    .popup-heading{
-      text-align: center;
-      
-    }
-  }
 @media screen and (max-width: 1199px){
   .arrow{
       display: none;
   }
 }
-@media  screen and (max-width:767px){
-   .products__menu{
-        text-align: center;
-        margin-bottom: 8rem;
-    }
+
     .products__menu-item{
         display: inline-block;
         padding:  1.5rem 2rem;
@@ -682,7 +672,15 @@ section{
         font-weight: 700;
         color: var(--white);
     }
-   
+    
+        .products__menu{
+             text-align: center;
+             margin-bottom: 8rem;
+         }
+         .popup-heading{
+            text-align: center;
+            
+          }
   }
   @media screen and (max-width:1117px) and (min-width:992px) {
     div #form-id{
