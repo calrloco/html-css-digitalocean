@@ -807,6 +807,14 @@ section{
         text-align: center;
         
     }
+   
+}
+@media screen and (max-width:579px){
+    .data__center-li{
+        display: flex;
+        flex-direction: row;
+    }
+   
 }
 @media screen and (max-width:538px){
     .city{
