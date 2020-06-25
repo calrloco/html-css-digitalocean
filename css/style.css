@@ -66,6 +66,15 @@ section{
     display: inline-block;
     text-transform: capitalize;
     padding-right: 2rem;
+    
+}
+.navbar__list-items a:hover{
+    color: #337ab7;
+    margin-bottom: var(--blue-buttons);
+}
+.navbar__list-items a:hover{
+    color: #337ab7;
+    border-bottom:2px solid var(--blue-buttons);
 }
 .navbar a{
     text-decoration: none;
