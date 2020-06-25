@@ -600,7 +600,7 @@ section{
 }
 .popup-bottom{
   display: flex;
-  
+  justify-content: space-around;
 }
 
 #popup-btn:focus{
@@ -612,6 +612,12 @@ section{
 /* menu popup fine */
 /* footer fine */
 /* query */
+@media screen and (max-width: 767px){
+    .popup-heading{
+      text-align: center;
+      
+    }
+  }
 @media screen and (max-width: 1199px){
   .arrow{
       display: none;
@@ -756,7 +762,7 @@ section{
     .popup-heading::after{
         content: 'Login or sing up to your account';
         position: relative;
-        left: 15%;
+        
     }
     .popup-heading p{
         display: none;
